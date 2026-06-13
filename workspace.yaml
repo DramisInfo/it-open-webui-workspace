@@ -1,0 +1,19 @@
+apiVersion: platform.dramisinfo.com/v1alpha1
+kind: XProductWorkspace
+metadata:
+  name: it-open-webui
+spec:
+  department: IT
+  productName: Open WebUI
+  productCode: open-webui
+  chargeCode: IT-008
+  owner: frederic.simard@dramisinfo.com
+  environments:
+    - name: dev
+      autoSync: true
+  applicationGroups:
+    - name: app
+      configRepo:
+        url: https://github.com/DramisInfo/it-open-webui-workspace
+        path: environments
+        branch: HEAD
