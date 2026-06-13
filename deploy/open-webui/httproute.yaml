@@ -3,10 +3,10 @@ kind: HTTPRoute
 metadata:
   name: open-webui
   annotations:
-    link.argocd.argoproj.io/external-link: https://open-webui.cace-1-dev.dramisinfo.home
+    link.argocd.argoproj.io/external-link: https://open-webui.cace-1-dev.dramisinfo.com
 spec:
   hostnames:
-    - open-webui.cace-1-dev.dramisinfo.home
+    - open-webui.cace-1-dev.dramisinfo.com
   parentRefs:
     - name: shared-gateway
       namespace: istio-system
